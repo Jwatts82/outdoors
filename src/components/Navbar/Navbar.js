@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import './Navbar.css'
 
+
 class Navbar extends Component {
+
   render() {
     return (
       <nav className='nav'>
         <div className='container'>
           <h1 className='logo'>
-            <a href='#'></a>Outdoors
+            <a href='#'>Outdoors</a>
           </h1>
           <ul>
             <li>
-              <a href='#'className="active">Home</a>
+              <a href='#' className='current'>
+                Home
+              </a>
             </li>
             <li>
               <a href='#'>About</a>
@@ -28,7 +32,6 @@ class Navbar extends Component {
           </ul>
         </div>
       </nav>
-
     );
   }
 }
