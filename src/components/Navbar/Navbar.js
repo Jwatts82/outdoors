@@ -13,8 +13,8 @@ const Navbar = () => {
           <NavLink to='/' className='a'>
             Home
           </NavLink>
-          <NavLink to='/Parks' className='a'>
-            Parks
+          <NavLink to='/States' className='a'>
+            States
           </NavLink>
           <NavLink to='/Trails' className='a'>
             Trails
