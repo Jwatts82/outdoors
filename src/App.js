@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Welcome from './components/Welcome/Welcome';
-import Parks from './components/Parks/Parks';
+import Parks from './containers/Parks/Parks';
 // import Trails from './components/Trails/Trails';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
