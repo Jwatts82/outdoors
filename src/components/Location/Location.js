@@ -1,9 +1,20 @@
 import React from 'react';
+import './Location.css';
 
 function Location() {
-  return (<div>
-      <h1>States</h1>
-  </div>)
+  return (
+    <div className='container'>
+      {/* <button>{location}</button>   */}
+      <div className="card">
+        <img>
+
+        </img>
+        <p className="parkname">Park</p>
+
+      </div>
+      <div>class</div>
+    </div>
+  );
 }
 
-export default Location
+export default Location;

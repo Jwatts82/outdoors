@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Location from '../../components/Location/Location';
+import Park from '../../components/Park/Park';
 
 const My_Key = process.env.REACT_APP_NPS_API_KEY;
 
-class Locations extends Component {
+class Parks extends Component {
   state = {
-    locations: []
+    parks: []
   }
 
   componentDidMount() {
@@ -14,22 +14,24 @@ class Locations extends Component {
       .then((data) => {
         console.log(data.data);
         this.setState({
-          locations: data.data
+          parks: data.data
         });
       });
   }
 
   render() {
-    const locations = this.state.locations.map((location, i) => 
-      <Location key={i} location={location.state} />)
+    const parks = this.state.parks.map((park, i) => <Park 
+    key={i} 
+    park={park.fullName}
+    img={park.images[0].url} />)
 
     return ( 
     <div> 
-      {locations} 
+      {parks} 
     </div>
     )
 }
 
 }
 
-export default Locations
+export default Parks

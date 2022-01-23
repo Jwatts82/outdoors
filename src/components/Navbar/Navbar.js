@@ -13,8 +13,8 @@ const Navbar = () => {
           <NavLink to='/' className='a'>
             Home
           </NavLink>
-          <NavLink to='/States' className='a'>
-            States
+          <NavLink to='/Parks' className='a'>
+            Parks
           </NavLink>
           <NavLink to='/Trails' className='a'>
             Trails
@@ -23,28 +23,6 @@ const Navbar = () => {
             Camping
           </NavLink>
         </ul>
-        {/* <ul>
-              <li>
-                <a href='#' className='current'>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href='#'>Parks</a>
-              </li>
-              <li>
-                <a href='#'>Trails</a>
-              </li>
-              <li>
-                <a href='#'>Favorites</a>
-              </li>
-              <li>
-                <a href='#'>Log In</a>
-              </li>
-              <li>
-                <a href='#'>Sign Up</a>
-              </li>
-            </ul> */}
       </div>
     </nav>
   );
